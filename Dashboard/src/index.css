@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Murgamon Dashboard Design System - Enhanced Agricultural Theme */
+
+@layer base {
+  :root {
+    /* Base colors - Enhanced Murgamon theme */
+    --background: 115 25% 97%;
+    --foreground: 115 15% 12%;
+
+    /* Card system */
+    --card: 0 0% 100%;
+    --card-foreground: 115 15% 12%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 115 15% 12%;
+
+    /* Primary - Enhanced farm green */
+    --primary: 115 45% 28%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 115 50% 25%;
+
+    /* Secondary - Earth brown */
+    --secondary: 30 25% 85%;
+    --secondary-foreground: 120 10% 15%;
+
+    /* Success - Healthy green */
+    --success: 120 60% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning - Alert orange */
+    --warning: 35 85% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Danger - Critical red */
+    --danger: 0 85% 55%;
+    --danger-foreground: 0 0% 100%;
+
+    /* Muted */
+    --muted: 120 15% 92%;
+    --muted-foreground: 120 8% 45%;
+
+    /* Accent - Sky blue for sensors */
+    --accent: 200 75% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Destructive */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Border & inputs */
+    --border: 120 20% 88%;
+    --input: 120 20% 88%;
+    --ring: 120 40% 25%;
+
+    /* Enhanced Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(115, 45%, 28%) 0%, hsl(125, 55%, 38%) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(125, 65%, 45%) 0%, hsl(135, 60%, 50%) 100%);
+    --gradient-warning: linear-gradient(135deg, hsl(38, 88%, 55%) 0%, hsl(48, 85%, 60%) 100%);
+    --gradient-danger: linear-gradient(135deg, hsl(5, 88%, 55%) 0%, hsl(15, 85%, 60%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(115, 45%, 28%) 0%, hsl(135, 50%, 32%) 50%, hsl(105, 55%, 35%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(200, 80%, 60%) 0%, hsl(210, 75%, 65%) 100%);
+
+    /* Enhanced Shadows */
+    /* Shadows */
+    --shadow-soft: 0 2px 8px hsl(120, 20%, 70%, 0.1);
+    --shadow-medium: 0 4px 16px hsl(120, 20%, 60%, 0.15);
+    --shadow-strong: 0 8px 32px hsl(120, 20%, 50%, 0.2);
+    --shadow-glow: 0 0 20px hsl(120, 40%, 25%, 0.3);
+
+    /* Shadows */
+    --shadow-soft: 0 2px 8px hsl(120, 20%, 70%, 0.1);
+    --shadow-medium: 0 4px 16px hsl(120, 20%, 60%, 0.15);
+    --shadow-strong: 0 8px 32px hsl(120, 20%, 50%, 0.2);
+    --shadow-glow: 0 0 20px hsl(120, 40%, 25%, 0.3);
+
+    --radius: 0.5rem;
+
+    /* Sidebar */
+    --sidebar-background: 120 25% 96%;
+    --sidebar-foreground: 120 10% 20%;
+    --sidebar-primary: 120 40% 25%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 120 20% 90%;
+    --sidebar-accent-foreground: 120 10% 20%;
+    --sidebar-border: 120 20% 85%;
+    --sidebar-ring: 120 40% 25%;
+  }
+
+  .dark {
+    --background: 120 15% 8%;
+    --foreground: 120 5% 90%;
+
+    --card: 120 15% 10%;
+    --card-foreground: 120 5% 90%;
+
+    --popover: 120 15% 10%;
+    --popover-foreground: 120 5% 90%;
+
+    --primary: 120 45% 55%;
+    --primary-foreground: 120 15% 8%;
+    --primary-hover: 120 50% 60%;
+
+    --secondary: 120 10% 18%;
+    --secondary-foreground: 120 5% 90%;
+
+    --success: 120 55% 50%;
+    --success-foreground: 120 15% 8%;
+
+    --warning: 35 80% 60%;
+    --warning-foreground: 120 15% 8%;
+
+    --danger: 0 80% 60%;
+    --danger-foreground: 120 15% 8%;
+
+    --muted: 120 10% 15%;
+    --muted-foreground: 120 5% 65%;
+
+    --accent: 200 70% 65%;
+    --accent-foreground: 120 15% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 120 5% 90%;
+
+    --border: 120 10% 18%;
+    --input: 120 10% 18%;
+    --ring: 120 45% 55%;
+
+    --sidebar-background: 120 15% 6%;
+    --sidebar-foreground: 120 5% 85%;
+    --sidebar-primary: 120 45% 55%;
+    --sidebar-primary-foreground: 120 15% 6%;
+    --sidebar-accent: 120 10% 12%;
+    --sidebar-accent-foreground: 120 5% 85%;
+    --sidebar-border: 120 10% 15%;
+    --sidebar-ring: 120 45% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
