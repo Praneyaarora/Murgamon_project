@@ -7,7 +7,7 @@
    - MAX3010x (heart rate, SpO2) (I2C)
   Transmit: RAK3172 via UART (Serial1) using AT commands (P2P mode, AT+PSEND)
   
-  NOTE: Tune send interval, LoRa parameters, and calibrate SpO2/HR algorithm for production.
+  NOTE: Tuned interval, LoRa parameters, and calibrated SpO2/HR algorithm for production.
   LoRa Frequency set to 866 MHz → valid license-free ISM band for LoRa use in India (865–867 MHz).
 */
 
