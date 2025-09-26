@@ -240,7 +240,7 @@ int readMoistureRaw() {
 
 float getMoisturePercentage() {
   int raw = readMoistureRaw();
-  // Convert raw reading to percentage (adjust based on your sensor calibration)
+  // Convert raw reading to percentage (adjust based on sensor calibration)
   float percentage = map(raw, MOISTURE_LOW_THRESHOLD, MOISTURE_HIGH_THRESHOLD, 0, 100);
   percentage = constrain(percentage, 0, 100);
   return percentage;
