@@ -465,7 +465,7 @@ void setup() {
     Serial.println("SPIFFS mount failed - continuing without persistent storage");
   }
 
-  // Setup WiFi and time (optional)
+  // Setup WiFi and time
   setupWiFiAndTime();
 
   // Initialize LoRa
@@ -475,7 +475,7 @@ void setup() {
   float initialMoisture = getMoisturePercentage();
   Serial.printf("Initial water tank level: %.1f%%\n", initialMoisture);
 
-  // Send startup message
+  // startup message
   loraSendData("SYSTEM_STARTUP", String(initialMoisture));
 
   Serial.println("=== System Ready ===\n");
