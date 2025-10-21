@@ -1,7 +1,5 @@
 # 🐔 Murgamon: AI-IoT Powered Smart Biosecurity and Livestock Monitoring System
 
-![IoT Farm Schematic Block](https://user-images.githubusercontent.com/path/to/schematic-block.png)
-
 *Next-generation predictive livestock health surveillance, disease outbreak prevention, and automated farm biosecurity compliance platform*
 
 ---
